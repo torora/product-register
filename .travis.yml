@@ -3,6 +3,7 @@ sudo: required
 services: docker
 
 before_install:
+  - docker login -u $shimomu1992 p $65190398-b73c-4c56-9b33-38ff381134a8
   - docker-compose up --build -d
 
 script:
